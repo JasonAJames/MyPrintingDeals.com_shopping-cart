@@ -135,7 +135,9 @@
         "@showfs": true,
         "expanded": {
             "json()": [
-                "/"
+                "/",
+                "/views",
+                "/views/partials"
             ]
         }
     },
