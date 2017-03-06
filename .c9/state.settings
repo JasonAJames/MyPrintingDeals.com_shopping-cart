@@ -74,14 +74,14 @@
             "@ace": 1,
             "@acestatus": 1,
             "@divider": 4,
-            "@document": 4,
+            "@document": 5,
             "@form": 6,
             "@menu": 5,
             "@menuitem": 13,
             "@pane": 2,
-            "@session": 3,
-            "@tab": 4,
-            "@undoManager": 4,
+            "@session": 4,
+            "@tab": 5,
+            "@undoManager": 5,
             "@welcome": 1
         }
     },
@@ -99,7 +99,7 @@
     },
     "panecycle": {
         "json()": [
-            "tab3",
+            "tab4",
             "tab1"
         ]
     },
@@ -143,9 +143,10 @@
     },
     "tabs": {
         "json()": {
-            "focus": "/views/partials/footer.html",
+            "focus": "/views/partials/footer.hbs",
             "meta": {
                 "accessList": [
+                    "tab4",
                     "tab3"
                 ]
             },
@@ -156,17 +157,37 @@
                     "name": "tab3",
                     "path": "/views/partials/footer.html",
                     "className": [
-                        "tab3",
+                        "tab3"
+                    ],
+                    "document": {
+                        "changed": false,
+                        "meta": {
+                            "timestamp": 1488781742465
+                        },
+                        "filter": true,
+                        "title": "footer.html",
+                        "tooltip": "/views/partials/footer.html",
+                        "ace": {}
+                    },
+                    "editorType": "ace",
+                    "active": false
+                },
+                {
+                    "type": "tab",
+                    "name": "tab4",
+                    "path": "/views/partials/footer.hbs",
+                    "className": [
+                        "tab4",
                         "focus"
                     ],
                     "document": {
                         "changed": false,
                         "meta": {
-                            "timestamp": 1484094666000
+                            "timestamp": 1479335761000
                         },
                         "filter": true,
-                        "title": "footer.html",
-                        "tooltip": "/views/partials/footer.html",
+                        "title": "footer.hbs",
+                        "tooltip": "/views/partials/footer.hbs",
                         "ace": {}
                     },
                     "editorType": "ace",
@@ -180,7 +201,7 @@
     },
     "tree_selection": {
         "json()": [
-            "/views/partials/footer.html"
+            "/views/partials/footer.hbs"
         ]
     }
 }
