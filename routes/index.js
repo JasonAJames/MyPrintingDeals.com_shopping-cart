@@ -34,7 +34,7 @@ router.get('/details', function(req, res, next) {
 });
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/homepage', function(req, res, next) {
   Product.find(function(err, docs){
   	var productChunks = [];
   	var chunkSize = 3;
@@ -46,7 +46,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET sitedown page. */
-router.get('/sitedown', function(req, res, next) {
+router.get('/', function(req, res, next) {
   Product.find(function(err, docs){
   	var productChunks = [];
   	var chunkSize = 3;
