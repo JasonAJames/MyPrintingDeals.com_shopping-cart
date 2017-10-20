@@ -34,19 +34,19 @@ router.get('/details', function(req, res, next) {
 });
 
 /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   Product.find(function(err, docs){
-//   	var productChunks = [];
-//   	var chunkSize = 3;
-//   	for (var i = 0; i < docs.length; i+= chunkSize) {
-//   		productChunks.push(docs.slice(i, i + chunkSize));
-//   	}
-//   	res.render('homepage', { title: 'MyPrintingDeals.com', products: productChunks });
-//   }); 
-// });
+router.get('/', function(req, res, next) {
+  Product.find(function(err, docs){
+  	var productChunks = [];
+  	var chunkSize = 3;
+  	for (var i = 0; i < docs.length; i+= chunkSize) {
+  		productChunks.push(docs.slice(i, i + chunkSize));
+  	}
+  	res.render('homepage', { title: 'MyPrintingDeals.com', products: productChunks });
+  }); 
+});
 
 /* GET sitedown page. */
-router.get('/', function(req, res, next) {
+router.get('/sitedown', function(req, res, next) {
   Product.find(function(err, docs){
   	var productChunks = [];
   	var chunkSize = 3;
